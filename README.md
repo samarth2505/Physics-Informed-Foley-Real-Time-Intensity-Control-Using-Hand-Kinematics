@@ -6,7 +6,7 @@ The system analyzes a video, tracks the performer's hand motion using **MediaPip
 
 This project was built for the "Advanced Foundations in Machine Learning" (AFML) course at PES University (November 2025).
 
-## 🚀 Key Features
+## Key Features
 * **Physics-Informed:** Predicts sound loudness based on real-world physics (deceleration) rather than just visual semantics.
 * **Multi-Tap Detection:** Scans a continuous video and uses `scipy.signal.find_peaks` to detect *all* distinct tap events, not just one.
 * **Dynamic Intensity:** Each detected tap is assigned a unique volume based on the model's prediction of the impact force.
@@ -19,7 +19,7 @@ The core of the project is proven by the strong positive correlation found betwe
 ![PhysiCNet Proof of Concept Plot](https://i.imgur.com/your-plot-image-url.png)
 *(You will need to upload your plot to GitHub or an image host like Imgur and paste the URL here)*
 
-## 🛠️ How It Works
+##How It Works
 The pipeline is a multi-stage process:
 
 1.  **Video Input:** A silent video file is loaded.
@@ -30,7 +30,7 @@ The pipeline is a multi-stage process:
 6.  **Audio Synthesis:** The model's prediction (RMS) is mapped to a dB gain. A `base_hit.wav` file is loaded, its volume is set, and it's scheduled to play at the exact time of the tap.
 7.  **Final Export:** `MoviePy` merges the silent video with all the newly generated sound clips into a final `.mp4` file.
 
-## 🏃‍♂️ How to Run
+## How to Run
 This project was built in Google Colab. The `AFML_FINAL.ipynb` notebook contains the complete, end-to-end code.
 
 1.  **Setup:** Upload the notebook to Google Colab and ensure your Google Drive folder structure matches the paths defined in the notebook (e.g., `AFML_MINIPROJECT/data/curated_dataset/`).
