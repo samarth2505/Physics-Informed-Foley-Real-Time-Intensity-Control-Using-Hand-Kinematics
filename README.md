@@ -13,11 +13,11 @@ This project was built for the "Advanced Foundations in Machine Learning" (AFML)
 * **Automated Sync:** The generated audio is perfectly synchronized with the visual impact events using the timing data from the kinematic analysis.
 * **Technologies:** Python, OpenCV, MediaPipe, Librosa, Scikit-learn, MoviePy, Pydub.
 
-## 📉 Proof of Concept
+##Proof of Concept
 The core of the project is proven by the strong positive correlation found between the visually-derived `max_deceleration` and the ground-truth `peak_rms` (loudness) from the audio. The plot below shows that "soft" taps (low deceleration) cluster in the bottom-left, while "hard" taps (high deceleration) cluster in the top-right.
 
-![PhysiCNet Proof of Concept Plot](https://i.imgur.com/your-plot-image-url.png)
-*(You will need to upload your plot to GitHub or an image host like Imgur and paste the URL here)*
+<img width="1107" height="707" alt="Graph_1" src="https://github.com/user-attachments/assets/130b1fd3-0ebe-4a48-bcb4-fcf9a28d46d9" />
+
 
 ##How It Works
 The pipeline is a multi-stage process:
